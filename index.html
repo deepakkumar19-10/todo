@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TO DO APP</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="apps">
+      <div class="heading">
+        <h1>-:TO DO APP:-</h1>
+      </div>
+      <div id="todo-container">
+        <form id="todo-form">
+          <input
+            type="text"
+            id="todo-input"
+            placeholder="Enter a task"
+            required
+          />
+          <button type="button" id="todo-button">+ Add Task</button>
+        </form>
+      </div>
+    </div>
+    <div class="list">
+      <p>TO DO LIST</p>
+    </div>
+    <ol id="todo-list"></ol>
+    <script src="app.js"></script>
+  </body>
+</html>
