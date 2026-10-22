@@ -30,12 +30,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const li = document.createElement("li");
     li.setAttribute("data-id", task.id);
     if (task.completed) li.classList.add("completed");
-    li.innerHTML = `
-  <div class="task-content">
+    li.innerHTML = ` <div class="task-content">
       <span>${task.text}</span>
       <button>Delete</button>
-  </div>
-`;
+     </div>`;
     li.addEventListener("click", (e) => {
       if (e.target.tagName === "BUTTON") return;
       task.completed = !task.completed;
